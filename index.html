@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia das Maes</title>
+    <style>
+        .carta-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .carta {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 2px solid #1a759f;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .carta::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 30px;
+            background: #1a759f;
+            border-radius: 5px;
+        }
+
+        .carta-titulo {
+            color: #1a759f;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .carta-mensagem {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #333;
+            text-align: justify;
+        }
+
+        .carta-assinatura {
+            margin-top: 30px;
+            text-align: right;
+            font-style: italic;
+            color: #1a759f;
+            font-weight: bold;
+        }
+
+        .selo {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 80px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body >
+   
+    <div class="carta-container">
+        <div class="carta">
+            <h2 class="carta-titulo">Dia das Maes</h2>
+            <p class="carta-mensagem">
+                Querida mae,<br>
+
+                Hoje e sempre, quero que você saiba o quanto é especial. Você é meu porto seguro, meu exemplo de amor e força, e a pessoa que torna a vida mais bonita simplesmente por existir.
+
+                Obrigada(o) por cada abraço, cada conselho e por todo o cuidado que não mede esforços. Seu amor é o maior presente que eu poderia receber.
+                
+                Feliz Dia das Mães! Que este dia seja tão maravilhoso quanto você é para mim.
+                
+        
+            
+            </p>
+            <p class="carta-assinatura">
+                Com todo o meu carinho,<br>
+                Eduardo
+            </p>
+            
+        </div>
+    </div>
+</body>
+
+</html>
